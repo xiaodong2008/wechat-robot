@@ -1,0 +1,22 @@
+{
+  "name": "wechat-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dy-xiaodong2022/wechat-robot.git"
+  },
+  "author": "dy-xiaodong2022",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dy-xiaodong2022/wechat-robot/issues"
+  },
+  "homepage": "https://github.com/dy-xiaodong2022/wechat-robot#readme",
+  "dependencies": {
+    "wechaty": "^1.20.2"
+  }
+}
