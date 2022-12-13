@@ -2,10 +2,14 @@
   "name": "wechat-robot",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.ts",
+  "superagent": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "rollup -c && node lib/index.js",
+    "build": "rollup -c"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dy-xiaodong2022/wechat-robot.git"
@@ -17,6 +21,19 @@
   },
   "homepage": "https://github.com/dy-xiaodong2022/wechat-robot#readme",
   "dependencies": {
-    "wechaty": "^1.20.2"
+    "axios": "^1.2.1",
+    "chatgpt": "^2.0.6",
+    "p-timeout": "^6.0.0",
+    "picocolors": "^1.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^1.20.2",
+    "wechaty-puppet-wechat": "^1.18.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^23.0.4",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "rollup": "^2.68.0",
+    "rollup-plugin-node-externals": "^5.0.2"
   }
 }
