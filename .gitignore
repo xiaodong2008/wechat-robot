@@ -54,3 +54,4 @@ dkms.conf
 .idea/
 node_modules/
 secret.json/
+lib/
