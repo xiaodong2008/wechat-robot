@@ -45,6 +45,12 @@ npm install
 npm run dev
 ```
 
+## 常见问题
+
+1. 为什么打包时报错 `SyntaxError: Octal literal in strict mode`
+
+你可以在 `node_modules\qrcode-terminal\lib\main.js` 中，把第三和第四行的 `\033` 改为 `\x1b`。
+
 ## 温馨提醒
 
 机器人虽好，但需注意不要拿自己大号扫二维码登录，否则可能会被微信封号。
