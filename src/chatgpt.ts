@@ -17,7 +17,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
 async function replyMessage(contact, content) {
     return new Promise((resolve) => {
         console.log(`Ask chatgpt: ${content}`)
-        // send https://fastjs.cc/chatgpt/ask.php to ask
+        // send https://xxx/chatgpt/ask.php to ask
         axios.post('https://xxx/chatgpt/ask.php', {
             ask: content
         }).catch(function (error) {
