@@ -27,6 +27,17 @@ npm install
 ```
 
 3. 修改配置文件 `secret.json`
+```text
+{
+  "translate": {
+    "appid": "your baidu translate appID",
+    "key": "your baidu translate key"
+  },
+  "weather": {
+    "key": "your visualcrossing weather key"
+  }
+}
+```
 
 4. 启动
 
